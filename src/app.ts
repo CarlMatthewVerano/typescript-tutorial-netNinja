@@ -1,4 +1,9 @@
+// ! after the querySelector tells the program that it exists
 const anchor = document.querySelector('a')!;
+
+// You need a checker if you wanna access properties of the anchor
+// since the ts file doesn't have direct access to html so it doesn't
+// know if anchor exists.
 if(anchor) {
   console.log(anchor.href);
 }
